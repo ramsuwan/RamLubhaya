@@ -55,7 +55,7 @@ public class Memoryfilesystem {
 		
 		/*1.Create a new folder..........*/ 
 		
-		File f = new File("C:/Users/LavanyaHassan/Desktop/comcast");
+		File f = new File("C:/Users/Ramlubhaya/Desktop/comcast");
 		f.mkdirs();	
 		
 	     try {
@@ -65,8 +65,8 @@ public class Memoryfilesystem {
         
         /*2.Create a new file..........*/
         
-        File file = new File("C:/Users/LavanyaHassan/Desktop/comcast/cfile.txt");
-        File dfile = new File("C:/Users/LavanyaHassan/Desktop/comcast/dfile.txt");
+        File file = new File("C:/Users/Ramlubhaya/Desktop/comcast/cfile.txt");
+        File dfile = new File("C:/Users/Ramlubhaya/Desktop/comcast/dfile.txt");
         dfile.createNewFile();
         //if file doesnt exists, then create it 
         if (!file.exists()) {
@@ -87,7 +87,7 @@ public class Memoryfilesystem {
 	   	     
 	    /* 4.Copy files*/   /*5.Display file contents..............*/
 	     
-	     FileInputStream fs = new FileInputStream("C:/Users/LavanyaHassan/Desktop/comcast/c1file.txt");
+	     FileInputStream fs = new FileInputStream("C:/Users/Ramlubhaya/Desktop/comcast/c1file.txt");
 	     BufferedReader br = new BufferedReader(new InputStreamReader(fs));
 	     LinkedList<String> ll = new LinkedList<String>();
 	     String sline;
@@ -96,7 +96,7 @@ public class Memoryfilesystem {
 	         ll.add(sline);
 	         
 	         }
-	     FileOutputStream fout = new FileOutputStream("C:/Users/LavanyaHassan/Desktop/comcast/d2file.txt");
+	     FileOutputStream fout = new FileOutputStream("C:/Users/Ramlubhaya/Desktop/comcast/d2file.txt");
 	     BufferedWriter brout = new BufferedWriter(new OutputStreamWriter(fout));
 	     int i;
 	     int len = ll.size();
@@ -113,7 +113,7 @@ public class Memoryfilesystem {
 	     
 	     /*6.List folder contents..............*/
 	     
-	     File f1 = new File("C:/Users/LavanyaHassan/Desktop/comcast"); // current directory
+	     File f1 = new File("C:/Users/Ramlubhaya/Desktop/comcast"); // current directory
 	        File[] files = f1.listFiles();
 	        for (File file : files) {
 	            if (file.isDirectory()) {
@@ -129,7 +129,7 @@ public class Memoryfilesystem {
 	        
 	        Memoryfilesystem fileSearch = new Memoryfilesystem();
 
-	fileSearch.searchDirectory(new File("C:/Users/LavanyaHassan/Desktop/comcast"), "cfile.txt");
+	fileSearch.searchDirectory(new File("C:/Users/Ramlubhaya/Desktop/comcast"), "cfile.txt");
 
 	int count = fileSearch.getResult().size(); 
 
@@ -199,7 +199,7 @@ public class Memoryfilesystem {
 	
 	/*8.Search for a file by name..................*/
 	
-	File dir = new File("C:/Users/LavanyaHassan/Desktop/comcast"); 
+	File dir = new File("C:/Users/Ramlubhaya/Desktop/comcast"); 
 
     System.out.println("Directory is : "+ dir); 
 
@@ -234,7 +234,7 @@ public class Memoryfilesystem {
    
     /*9.(Optional) Copy folders................. */
     
-    File srcFolder = new File("C:/Users/LavanyaHassan/Desktop/comcast"); 
+    File srcFolder = new File("C:/Users/Ramlubhaya/Desktop/comcast"); 
 
     File destFolder = new File("C:\\New"); 
 
